@@ -1,0 +1,135 @@
+.estadio{
+    background-image:url(audience-g2144526c3_1920.jpg);
+    height: 80vh;
+    background-position: center center;
+    background-size: cover;   
+}
+
+.fondo{
+    background-image:url(earth-gfcd61857d_1280.jpg);
+    height: 40vh;
+    background-position: center center;
+    background-size: cover;   
+}
+.titulo1{
+    font-size: 100px;
+    margin-top: 50px;
+    font-family:fantasy;
+}
+body{
+    background-color: #040119;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cont-padre{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+.contenedor{
+    height: 450px;
+    width: 21%;
+    margin: 0 15px;
+   overflow: hidden;
+}
+.contenedor img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.box-datos{
+    height: 200px;
+    width: 100%;
+    background-color: #3f51b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .4s;
+}
+.box-datos h1{
+    font-size: 1em;
+    margin-top: -10px;
+    margin-bottom: -5px;
+}
+.box-datos h2{
+    font-size: .8em;
+}
+.box-datos h1,h2{
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffff
+}
+.box-datos p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    width: 80%;
+    color: #ffff
+
+}
+.box-datos span{
+    margin: 0 20px;
+    font-size: 1.2em;
+}
+span:nth-child(1){
+color: #3b5998;
+}
+span:nth-child(2){
+color: #55acee;
+}
+span:nth-child(3){
+    color:  #bb0000;
+
+}
+.contenedor:hover .box-datos{
+    transform: translateY(-160px);
+}
+
+@media screen and (max-width:1024px){
+    .cont-padre .contenedor{
+         width: 30%;
+         margin: 15px;
+     }
+ }
+ @media screen and (max-width:800px){
+    .cont-padre .contenedor{
+         width: 50%;
+         margin: 15px;
+     }
+ }
+ @media screen and (max-width:768px){
+    .cont-padre .contenedor{
+         width: 40%;
+         margin: 15px;
+     }
+ }
+ @media screen and (max-width:600px){
+    .cont-padre .contenedor{
+         width: 55%;
+         margin:20px 10px;
+     }
+ }
+ @media screen and (max-width:414px){
+     .cont-padre .contenedor{
+          width: 100%;
+          margin:20px  10px;
+      }
+  }
+  @media screen and (max-width:360px){
+     .cont-padre .contenedor{
+          width:100%;
+          margin:20px 10px;
+      }
+  }
+
+  

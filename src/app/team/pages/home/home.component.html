@@ -1,0 +1,107 @@
+
+
+<div class="estadio">
+    <div fxLayoutAlign="center end">
+
+   </div>
+   
+</div>
+
+<mat-sidenav-container fullscreen >
+     <mat-sidenav #sidenav mode="push" >
+        <mat-toolbar color="primary">
+            
+            <span class="menu-espacio">Menu</span>
+
+            <span class="spacer"></span>
+
+            <button mat-icon-button
+                     (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+
+        </mat-toolbar> 
+
+        <mat-nav-list>
+            <a routerLink="./inicio"
+              mat-list-item
+              (click)="sidenav.toggle()">
+              <mat-icon mat-list-icon>home</mat-icon>
+                <span>Inicio</span>
+            </a>
+        </mat-nav-list>
+
+        <mat-nav-list>
+            <a routerLink="./history"
+              mat-list-item
+              (click)="sidenav.toggle()">
+              <mat-icon mat-list-icon>history</mat-icon>
+                <span>History</span>
+            </a>
+        </mat-nav-list>
+
+        <mat-nav-list>
+            <a routerLink="./players"
+              mat-list-item
+              (click)="sidenav.toggle()">
+              <mat-icon mat-list-icon>people</mat-icon>
+                <span>Players</span>
+            </a>
+        </mat-nav-list>
+
+        <mat-nav-list>
+            <a routerLink="./statistics"
+              mat-list-item
+              (click)="sidenav.toggle()">
+              <mat-icon mat-list-icon>numbers</mat-icon>
+                <span>Statistics</span>
+            </a>
+        </mat-nav-list>
+
+        <mat-nav-list>
+            <a routerLink="./tickets"
+              mat-list-item
+              (click)="sidenav.toggle()">
+              <mat-icon mat-list-icon>label</mat-icon>
+                <span>Tickets</span>
+            </a>
+        </mat-nav-list>
+
+        <mat-nav-list>
+            <a routerLink="./store"
+              mat-list-item
+              (click)="sidenav.toggle()">
+              <mat-icon mat-list-icon>shopping_cart</mat-icon>
+                <span>Store</span>
+            </a>
+        </mat-nav-list>
+
+     </mat-sidenav>
+
+    <mat-toolbar color="primary">
+        <button mat-icon-button
+                 (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+     <mat-nav-list
+      fxLayoutGap="30px">
+        <a>Home</a>
+        <a>Players</a>
+     </mat-nav-list>
+
+        <span class="spacer"></span>
+
+        <button mat-button >
+            Logout
+        </button>
+
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
+    
+
+</mat-sidenav-container>
+
+
+

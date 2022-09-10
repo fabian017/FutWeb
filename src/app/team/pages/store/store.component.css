@@ -1,0 +1,18 @@
+mat-card{
+    margin-top: 20px;
+}
+
+button {
+	margin-right: 20px;
+  }
+
+  div.boton-gay {
+	width: 33.33%;
+	background-color: tomato
+  }
+  
+  button.centrado {
+	width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+	margin-left: 50%;
+	transform: translateX(-50%);
+  }
